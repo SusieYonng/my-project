@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "vue": "2.7.14",
+    "vue-router": "3",
+    "vue-template-compiler": "2.7.14"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -19,7 +21,8 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.0"
   },
   "eslintConfig": {
     "root": true,
@@ -33,7 +36,16 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {},
+
+  "overrides": [
+    {
+      "files": ["src/pages/**"],
+      "rules": {
+        "vue/multi-word-component-names": "off"
+      }
+    }
+  ]
   },
   "browserslist": [
     "> 1%",
