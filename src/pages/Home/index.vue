@@ -21,11 +21,15 @@ import { data } from "./config/data.js";
 
 export default {
   name: "home",
+  data() {
+    return { canvasBarrage: null, video: null };
+  },
   mounted() {
     const canvas = document.getElementById("canvas");
     const video = document.getElementById("video");
     // 创建CanvasBarrage实例
-    let canvasBarrage = new CanvasBarrage(canvas, video, { data });
+    this.canvasBarrage = new CanvasBarrage(canvas, video, { data });
+    const { canvasBarrage } = this
     // 设置video的play事件来调用CanvasBarrage实例的render方法
     video.addEventListener("play", () => {
       canvasBarrage.isPaused = false;
@@ -33,8 +37,33 @@ export default {
     });
     video.addEventListener("pause", () => {
       canvasBarrage.isPaused = true;
-      canvasBarrage.render(); // 触发弹幕
     });
+    // 拖动进度条触发 跳帧 事件
+    video.addEventListener("seeked", () => {
+      canvasBarrage.replay() // 重新渲染弹幕
+    })
+    // 发弹幕
+    const btn = document.querySelector("#btn");
+    btn.addEventListener("click", () => this.onSendText(video));
+    const text = document.querySelector("#text");
+    text.addEventListener('keyup', e => {
+      e.keyCode === 13 && this.onSendText(video)
+    })
+  },
+  methods: {
+    onSendText(video) {
+      const text = document.querySelector("#text");
+      const color = document.querySelector("#color");
+      const fontSize = document.querySelector("#range");
+      const obj = {
+        value: text.value,
+        color: color.value,
+        fontSize: fontSize.value,
+        time: video.currentTime,
+      }
+      text.value = ''
+      this.canvasBarrage.add(obj)
+    },
   },
 };
 </script>
