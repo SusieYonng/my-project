@@ -3,10 +3,12 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter)
 
+const canvasBarrage = () => import('./pages/Barrage/index.vue')
+const danmakuDemo = () => import('./pages/Danmaku/index.vue')
 
-const homePage = () => import('./pages/Home/index.vue')
 const routes = [
-    { path: '/', component: homePage },
+    { path: '/canvas-demo', component: canvasBarrage },
+    { path: '/', component: danmakuDemo },
 ]
 
 const router = new VueRouter({
