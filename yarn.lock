@@ -1062,6 +1062,11 @@
   resolved "http://registry.npm.pt.mi.com/@leichtgewicht/ip-codec/download/@leichtgewicht/ip-codec-2.0.3.tgz#0300943770e04231041a51bd39f0439b5c7ab4f0"
   integrity sha1-AwCUN3DgQjEEGlG9OfBDm1x6tPA=
 
+"@mediapipe/selfie_segmentation@^0.1.1675465747":
+  version "0.1.1675465747"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@mediapipe/selfie_segmentation/-/selfie_segmentation-0.1.1675465747.tgz#f1f61eb116bf2efc262faf0a49a1829f4bae2712"
+  integrity sha1-8fYesRa/LvwmL68KSaGCn0uuJxI=
+
 "@node-ipc/js-queue@2.0.3":
   version "2.0.3"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@node-ipc/js-queue/-/js-queue-2.0.3.tgz#ac7fe33d766fa53e233ef8fedaf3443a01c5a4cd"
@@ -1158,6 +1163,51 @@
   version "1.0.2"
   resolved "http://registry.npm.pt.mi.com/@soda/get-current-script/download/@soda/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha1-pTUV2yXYA4N0OBtzryC7Ty5QjYc=
+
+"@tensorflow-models/body-segmentation@^1.0.1":
+  version "1.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@tensorflow-models/body-segmentation/-/body-segmentation-1.0.1.tgz#333429a8202252185f0cc6ffba726b82f71943eb"
+  integrity sha1-MzQpqCAiUhhfDMb/unJrgvcZQ+s=
+  dependencies:
+    rimraf "^3.0.2"
+
+"@tensorflow/tfjs-backend-cpu@4.5.0":
+  version "4.5.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@tensorflow/tfjs-backend-cpu/-/tfjs-backend-cpu-4.5.0.tgz#8a170dd30b132c08c91bd32b3fc169de33e1dda0"
+  integrity sha1-ihcN0wsTLAjJG9MrP8Fp3jPh3aA=
+  dependencies:
+    "@types/seedrandom" "^2.4.28"
+    seedrandom "^3.0.5"
+
+"@tensorflow/tfjs-backend-webgl@^4.5.0":
+  version "4.5.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@tensorflow/tfjs-backend-webgl/-/tfjs-backend-webgl-4.5.0.tgz#ac55967a50db1db46b61eeab51e1c7f86c210c30"
+  integrity sha1-rFWWelDbHbRrYe6rUeHH+GwhDDA=
+  dependencies:
+    "@tensorflow/tfjs-backend-cpu" "4.5.0"
+    "@types/offscreencanvas" "~2019.3.0"
+    "@types/seedrandom" "^2.4.28"
+    "@types/webgl-ext" "0.0.30"
+    seedrandom "^3.0.5"
+
+"@tensorflow/tfjs-converter@^4.5.0":
+  version "4.5.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@tensorflow/tfjs-converter/-/tfjs-converter-4.5.0.tgz#b98014404436b8e69aa2f014e60be841ece2a9fe"
+  integrity sha1-uYAUQEQ2uOaaovAU5gvoQeziqf4=
+
+"@tensorflow/tfjs-core@^4.5.0":
+  version "4.5.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@tensorflow/tfjs-core/-/tfjs-core-4.5.0.tgz#9813a1c1a75b6046ffa6131aa4c3c43c9ae8cdd6"
+  integrity sha1-mBOhwadbYEb/phMapMPEPJrozdY=
+  dependencies:
+    "@types/long" "^4.0.1"
+    "@types/offscreencanvas" "~2019.7.0"
+    "@types/seedrandom" "^2.4.28"
+    "@types/webgl-ext" "0.0.30"
+    "@webgpu/types" "0.1.30"
+    long "4.0.0"
+    node-fetch "~2.6.1"
+    seedrandom "^3.0.5"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -1274,6 +1324,11 @@
   resolved "http://registry.npm.pt.mi.com/@types/json-schema/download/@types/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
   integrity sha1-1CG2xSejA398hEM/0sQingFoY9M=
 
+"@types/long@^4.0.1":
+  version "4.0.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@types/long/-/long-4.0.2.tgz#b74129719fc8d11c01868010082d483b7545591a"
+  integrity sha1-t0EpcZ/I0RwBhoAQCC1IO3VFWRo=
+
 "@types/mime@*":
   version "3.0.1"
   resolved "http://registry.npm.pt.mi.com/@types/mime/download/@types/mime-3.0.1.tgz#5f8f2bca0a5863cb69bc0b0acd88c96cb1d4ae10"
@@ -1294,6 +1349,16 @@
   resolved "http://registry.npm.pt.mi.com/@types/normalize-package-data/download/@types/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
   integrity sha1-0zV0eaD9/dWQf+Z+F+CoXJBuEwE=
 
+"@types/offscreencanvas@~2019.3.0":
+  version "2019.3.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@types/offscreencanvas/-/offscreencanvas-2019.3.0.tgz#3336428ec7e9180cf4566dfea5da04eb586a6553"
+  integrity sha1-MzZCjsfpGAz0Vm3+pdoE61hqZVM=
+
+"@types/offscreencanvas@~2019.7.0":
+  version "2019.7.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@types/offscreencanvas/-/offscreencanvas-2019.7.0.tgz#e4a932069db47bb3eabeb0b305502d01586fa90d"
+  integrity sha1-5KkyBp20e7PqvrCzBVAtAVhvqQ0=
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "http://registry.npm.pt.mi.com/@types/parse-json/download/@types/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -1313,6 +1378,11 @@
   version "0.12.0"
   resolved "http://registry.npm.pt.mi.com/@types/retry/download/@types/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha1-KzXsz87n04zXKtmSMvvVi/+zyE0=
+
+"@types/seedrandom@^2.4.28":
+  version "2.4.30"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@types/seedrandom/-/seedrandom-2.4.30.tgz#d2efe425869b84163c2d56e779dddadb9372cbfa"
+  integrity sha1-0u/kJYabhBY8LVbned3a25Nyy/o=
 
 "@types/serve-index@^1.9.1":
   version "1.9.1"
@@ -1343,6 +1413,11 @@
   integrity sha1-Vw06C5msmVNg4xNv1gRRE7G9I28=
   dependencies:
     "@types/node" "*"
+
+"@types/webgl-ext@0.0.30":
+  version "0.0.30"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@types/webgl-ext/-/webgl-ext-0.0.30.tgz#0ce498c16a41a23d15289e0b844d945b25f0fb9d"
+  integrity sha1-DOSYwWpBoj0VKJ4LhE2UWyXw+50=
 
 "@types/ws@^8.5.1":
   version "8.5.3"
@@ -1754,6 +1829,11 @@
     "@webassemblyjs/ast" "1.11.1"
     "@xtuc/long" "4.2.2"
 
+"@webgpu/types@0.1.30":
+  version "0.1.30"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@webgpu/types/-/types-0.1.30.tgz#b6406dc4a1c1e0d469028ceb30ddffbbd2fa706c"
+  integrity sha1-tkBtxKHB4NRpAozrMN3/u9L6cGw=
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "http://registry.npm.pt.mi.com/@xtuc/ieee754/download/@xtuc/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
@@ -1768,6 +1848,13 @@ abbrev@1:
   version "1.1.1"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha1-+PLIh60Qv2f2NPAFtph/7TF5qsg=
+
+abort-controller@^3.0.0:
+  version "3.0.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
+  integrity sha1-6vVNU7YrrkE46AnKIlyEOabvs5I=
+  dependencies:
+    event-target-shim "^5.0.0"
 
 accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.8:
   version "1.3.8"
@@ -1967,6 +2054,26 @@ arrify@^1.0.1:
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
+asn1.js@^5.2.0:
+  version "5.4.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/asn1.js/-/asn1.js-5.4.1.tgz#11a980b84ebb91781ce35b0fdc2ee294e3783f07"
+  integrity sha1-EamAuE67kXgc41sP3C7ilON4Pwc=
+  dependencies:
+    bn.js "^4.0.0"
+    inherits "^2.0.1"
+    minimalistic-assert "^1.0.0"
+    safer-buffer "^2.1.0"
+
+assert@^2.0.0:
+  version "2.0.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/assert/-/assert-2.0.0.tgz#95fc1c616d48713510680f2eaf2d10dd22e02d32"
+  integrity sha1-lfwcYW1IcTUQaA8ury0Q3SLgLTI=
+  dependencies:
+    es6-object-assign "^1.1.0"
+    is-nan "^1.2.1"
+    object-is "^1.0.1"
+    util "^0.12.0"
+
 astral-regex@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.pt.mi.com/astral-regex/download/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
@@ -2000,6 +2107,11 @@ autoprefixer@^10.2.4:
     normalize-range "^0.1.2"
     picocolors "^1.0.0"
     postcss-value-parser "^4.2.0"
+
+available-typed-arrays@^1.0.5:
+  version "1.0.5"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
+  integrity sha1-kvlWFlAQadB9EO2y/DfT4cZRI7c=
 
 babel-loader@^8.2.2:
   version "8.2.5"
@@ -2081,6 +2193,16 @@ bluebird@^3.1.1:
   resolved "http://registry.npm.pt.mi.com/bluebird/download/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha1-nyKcFb4nJFT/qXOs4NvueaGww28=
 
+bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.11.9:
+  version "4.12.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/bn.js/-/bn.js-4.12.0.tgz#775b3f278efbb9718eec7361f483fb36fbbfea88"
+  integrity sha1-d1s/J477uXGO7HNh9IP7Nvu/6og=
+
+bn.js@^5.0.0, bn.js@^5.1.1:
+  version "5.2.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/bn.js/-/bn.js-5.2.1.tgz#0bc527a6a0d18d0aa8d5b0538ce4a77dccfa7b70"
+  integrity sha1-C8UnpqDRjQqo1bBTjOSnfcz6e3A=
+
 body-parser@1.20.0:
   version "1.20.0"
   resolved "http://registry.npm.pt.mi.com/body-parser/download/body-parser-1.20.0.tgz#3de69bd89011c11573d7bfee6a64f11b6bd27cc5"
@@ -2136,6 +2258,72 @@ braces@^3.0.2, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
+brorand@^1.0.1, brorand@^1.1.0:
+  version "1.1.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
+  integrity sha1-EsJe/kCkXjwyPrhnWgoM5XsiNx8=
+
+browserify-aes@^1.0.0, browserify-aes@^1.0.4:
+  version "1.2.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/browserify-aes/-/browserify-aes-1.2.0.tgz#326734642f403dabc3003209853bb70ad428ef48"
+  integrity sha1-Mmc0ZC9APavDADIJhTu3CtQo70g=
+  dependencies:
+    buffer-xor "^1.0.3"
+    cipher-base "^1.0.0"
+    create-hash "^1.1.0"
+    evp_bytestokey "^1.0.3"
+    inherits "^2.0.1"
+    safe-buffer "^5.0.1"
+
+browserify-cipher@^1.0.0:
+  version "1.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/browserify-cipher/-/browserify-cipher-1.0.1.tgz#8d6474c1b870bfdabcd3bcfcc1934a10e94f15f0"
+  integrity sha1-jWR0wbhwv9q807z8wZNKEOlPFfA=
+  dependencies:
+    browserify-aes "^1.0.4"
+    browserify-des "^1.0.0"
+    evp_bytestokey "^1.0.0"
+
+browserify-des@^1.0.0:
+  version "1.0.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/browserify-des/-/browserify-des-1.0.2.tgz#3af4f1f59839403572f1c66204375f7a7f703e9c"
+  integrity sha1-OvTx9Zg5QDVy8cZiBDdfen9wPpw=
+  dependencies:
+    cipher-base "^1.0.1"
+    des.js "^1.0.0"
+    inherits "^2.0.1"
+    safe-buffer "^5.1.2"
+
+browserify-rsa@^4.0.0, browserify-rsa@^4.0.1:
+  version "4.1.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/browserify-rsa/-/browserify-rsa-4.1.0.tgz#b2fd06b5b75ae297f7ce2dc651f918f5be158c8d"
+  integrity sha1-sv0Gtbda4pf3zi3GUfkY9b4VjI0=
+  dependencies:
+    bn.js "^5.0.0"
+    randombytes "^2.0.1"
+
+browserify-sign@^4.0.0:
+  version "4.2.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/browserify-sign/-/browserify-sign-4.2.1.tgz#eaf4add46dd54be3bb3b36c0cf15abbeba7956c3"
+  integrity sha1-6vSt1G3VS+O7OzbAzxWrvrp5VsM=
+  dependencies:
+    bn.js "^5.1.1"
+    browserify-rsa "^4.0.1"
+    create-hash "^1.2.0"
+    create-hmac "^1.1.7"
+    elliptic "^6.5.3"
+    inherits "^2.0.4"
+    parse-asn1 "^5.1.5"
+    readable-stream "^3.6.0"
+    safe-buffer "^5.2.0"
+
+browserify-zlib@^0.2.0:
+  version "0.2.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/browserify-zlib/-/browserify-zlib-0.2.0.tgz#2869459d9aa3be245fe8fe2ca1f46e2e7f54d73f"
+  integrity sha1-KGlFnZqjviRf6P4sofRuLn9U1z8=
+  dependencies:
+    pako "~1.0.5"
+
 browserslist@^4.0.0, browserslist@^4.14.5, browserslist@^4.16.3, browserslist@^4.16.6, browserslist@^4.20.3, browserslist@^4.21.3, browserslist@^4.21.4:
   version "4.21.5"
   resolved "http://registry.npm.pt.mi.com/browserslist/download/browserslist-4.21.5.tgz#75c5dae60063ee641f977e00edd3cfb2fb7af6a7"
@@ -2151,6 +2339,11 @@ buffer-from@^1.0.0:
   resolved "http://registry.npm.pt.mi.com/buffer-from/download/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
   integrity sha1-KxRqb9cugLT1XSVfNe1Zo6mkG9U=
 
+buffer-xor@^1.0.3:
+  version "1.0.3"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/buffer-xor/-/buffer-xor-1.0.3.tgz#26e61ed1422fb70dd42e6e36729ed51d855fe8d9"
+  integrity sha1-JuYe0UIvtw3ULm42cp7VHYVf6Nk=
+
 buffer@^5.5.0:
   version "5.7.1"
   resolved "http://registry.npm.pt.mi.com/buffer/download/buffer-5.7.1.tgz#ba62e7c13133053582197160851a8f648e99eed0"
@@ -2158,6 +2351,19 @@ buffer@^5.5.0:
   dependencies:
     base64-js "^1.3.1"
     ieee754 "^1.1.13"
+
+buffer@^6.0.3:
+  version "6.0.3"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/buffer/-/buffer-6.0.3.tgz#2ace578459cc8fbe2a70aaa8f52ee63b6a74c6c6"
+  integrity sha1-Ks5XhFnMj74qcKqo9S7mO2p0xsY=
+  dependencies:
+    base64-js "^1.3.1"
+    ieee754 "^1.2.1"
+
+builtin-status-codes@^3.0.0:
+  version "3.0.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
+  integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
 bytes@3.0.0:
   version "3.0.0"
@@ -2332,6 +2538,14 @@ ci-info@^1.5.0:
   resolved "http://registry.npm.pt.mi.com/ci-info/download/ci-info-1.6.0.tgz#2ca20dbb9ceb32d4524a683303313f0304b1e497"
   integrity sha1-LKINu5zrMtRSSmgzAzE/AwSx5Jc=
 
+cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
+  version "1.0.4"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/cipher-base/-/cipher-base-1.0.4.tgz#8760e4ecc272f4c363532f926d874aae2c1397de"
+  integrity sha1-h2Dk7MJy9MNjUy+SbYdKriwTl94=
+  dependencies:
+    inherits "^2.0.1"
+    safe-buffer "^5.0.1"
+
 clean-css@^5.2.2:
   version "5.2.4"
   resolved "http://registry.npm.pt.mi.com/clean-css/download/clean-css-5.2.4.tgz#982b058f8581adb2ae062520808fb2429bd487a4"
@@ -2505,6 +2719,11 @@ connect-history-api-fallback@^2.0.0:
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/connect-history-api-fallback/-/connect-history-api-fallback-2.0.0.tgz#647264845251a0daf25b97ce87834cace0f5f1c8"
   integrity sha1-ZHJkhFJRoNryW5fOh4NMrOD18cg=
 
+console-browserify@^1.2.0:
+  version "1.2.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/console-browserify/-/console-browserify-1.2.0.tgz#67063cef57ceb6cf4993a2ab3a55840ae8c49336"
+  integrity sha1-ZwY871fOts9Jk6KrOlWECujEkzY=
+
 console-control-strings@^1.1.0:
   version "1.1.0"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
@@ -2516,6 +2735,11 @@ consolidate@^0.15.1:
   integrity sha1-IasEMjXHGgfUXZqtmFk7DbpWurc=
   dependencies:
     bluebird "^3.1.1"
+
+constants-browserify@^1.0.0:
+  version "1.0.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/constants-browserify/-/constants-browserify-1.0.0.tgz#c20b96d8c617748aaf1c16021760cd27fcb8cb75"
+  integrity sha1-wguW2MYXdIqvHBYCF2DNJ/y4y3U=
 
 content-disposition@0.5.4:
   version "0.5.4"
@@ -2584,6 +2808,37 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+create-ecdh@^4.0.0:
+  version "4.0.4"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/create-ecdh/-/create-ecdh-4.0.4.tgz#d6e7f4bffa66736085a0762fd3a632684dabcc4e"
+  integrity sha1-1uf0v/pmc2CFoHYv06YyaE2rzE4=
+  dependencies:
+    bn.js "^4.1.0"
+    elliptic "^6.5.3"
+
+create-hash@^1.1.0, create-hash@^1.1.2, create-hash@^1.2.0:
+  version "1.2.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/create-hash/-/create-hash-1.2.0.tgz#889078af11a63756bcfb59bd221996be3a9ef196"
+  integrity sha1-iJB4rxGmN1a8+1m9IhmWvjqe8ZY=
+  dependencies:
+    cipher-base "^1.0.1"
+    inherits "^2.0.1"
+    md5.js "^1.3.4"
+    ripemd160 "^2.0.1"
+    sha.js "^2.4.0"
+
+create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
+  version "1.1.7"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/create-hmac/-/create-hmac-1.1.7.tgz#69170c78b3ab957147b2b8b04572e47ead2243ff"
+  integrity sha1-aRcMeLOrlXFHsriwRXLkfq0iQ/8=
+  dependencies:
+    cipher-base "^1.0.3"
+    create-hash "^1.1.0"
+    inherits "^2.0.1"
+    ripemd160 "^2.0.0"
+    safe-buffer "^5.0.1"
+    sha.js "^2.4.8"
+
 cross-spawn@^5.0.1:
   version "5.1.0"
   resolved "http://registry.npm.pt.mi.com/cross-spawn/download/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -2612,6 +2867,23 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+crypto-browserify@^3.12.0:
+  version "3.12.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/crypto-browserify/-/crypto-browserify-3.12.0.tgz#396cf9f3137f03e4b8e532c58f698254e00f80ec"
+  integrity sha1-OWz58xN/A+S45TLFj2mCVOAPgOw=
+  dependencies:
+    browserify-cipher "^1.0.0"
+    browserify-sign "^4.0.0"
+    create-ecdh "^4.0.0"
+    create-hash "^1.1.0"
+    create-hmac "^1.1.0"
+    diffie-hellman "^5.0.0"
+    inherits "^2.0.1"
+    pbkdf2 "^3.0.3"
+    public-encrypt "^4.0.0"
+    randombytes "^2.0.0"
+    randomfill "^1.0.3"
 
 css-declaration-sorter@^6.0.3:
   version "6.1.4"
@@ -2804,6 +3076,14 @@ define-lazy-prop@^2.0.0:
   resolved "http://registry.npm.pt.mi.com/define-lazy-prop/download/define-lazy-prop-2.0.0.tgz#3f7ae421129bcaaac9bc74905c98a0009ec9ee7f"
   integrity sha1-P3rkIRKbyqrJvHSQXJigAJ7J7n8=
 
+define-properties@^1.1.3:
+  version "1.2.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/define-properties/-/define-properties-1.2.0.tgz#52988570670c9eacedd8064f4a990f2405849bd5"
+  integrity sha1-UpiFcGcMnqzt2AZPSpkPJAWEm9U=
+  dependencies:
+    has-property-descriptors "^1.0.0"
+    object-keys "^1.1.1"
+
 define-properties@^1.1.4:
   version "1.1.4"
   resolved "http://registry.npm.pt.mi.com/define-properties/download/define-properties-1.1.4.tgz#0b14d7bd7fbeb2f3572c3a7eda80ea5d57fb05b1"
@@ -2827,6 +3107,14 @@ depd@^1.1.2, depd@~1.1.2:
   resolved "http://registry.npm.pt.mi.com/depd/download/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
 
+des.js@^1.0.0:
+  version "1.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/des.js/-/des.js-1.0.1.tgz#5382142e1bdc53f85d86d53e5f4aa7deb91e0843"
+  integrity sha1-U4IULhvcU/hdhtU+X0qn3rkeCEM=
+  dependencies:
+    inherits "^2.0.1"
+    minimalistic-assert "^1.0.0"
+
 destroy@1.2.0:
   version "1.2.0"
   resolved "http://registry.npm.pt.mi.com/destroy/download/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
@@ -2836,6 +3124,15 @@ detect-node@^2.0.4:
   version "2.1.0"
   resolved "http://registry.npm.pt.mi.com/detect-node/download/detect-node-2.1.0.tgz#c9c70775a49c3d03bc2c06d9a73be550f978f8b1"
   integrity sha1-yccHdaScPQO8LAbZpzvlUPl4+LE=
+
+diffie-hellman@^5.0.0:
+  version "5.0.3"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/diffie-hellman/-/diffie-hellman-5.0.3.tgz#40e8ee98f55a2149607146921c63e1ae5f3d2875"
+  integrity sha1-QOjumPVaIUlgcUaSHGPhrl89KHU=
+  dependencies:
+    bn.js "^4.1.0"
+    miller-rabin "^4.0.0"
+    randombytes "^2.0.0"
 
 dir-glob@^3.0.1:
   version "3.0.1"
@@ -2878,6 +3175,11 @@ dom-serializer@^1.0.1:
     domelementtype "^2.0.1"
     domhandler "^4.2.0"
     entities "^2.0.0"
+
+domain-browser@^4.22.0:
+  version "4.22.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/domain-browser/-/domain-browser-4.22.0.tgz#6ddd34220ec281f9a65d3386d267ddd35c491f9f"
+  integrity sha1-bd00Ig7CgfmmXTOG0mfd01xJH58=
 
 domelementtype@^2.0.1, domelementtype@^2.2.0:
   version "2.3.0"
@@ -2937,6 +3239,19 @@ electron-to-chromium@^1.4.284:
   version "1.4.288"
   resolved "http://registry.npm.pt.mi.com/electron-to-chromium/download/electron-to-chromium-1.4.288.tgz#bbce00eb03c1819fe3d0d0d861374b76c53f7507"
   integrity sha1-u84A6wPBgZ/j0NDYYTdLdsU/dQc=
+
+elliptic@^6.5.3:
+  version "6.5.4"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/elliptic/-/elliptic-6.5.4.tgz#da37cebd31e79a1367e941b592ed1fbebd58abbb"
+  integrity sha1-2jfOvTHnmhNn6UG1ku0fvr1Yq7s=
+  dependencies:
+    bn.js "^4.11.9"
+    brorand "^1.1.0"
+    hash.js "^1.0.0"
+    hmac-drbg "^1.0.1"
+    inherits "^2.0.4"
+    minimalistic-assert "^1.0.1"
+    minimalistic-crypto-utils "^1.0.1"
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -3015,6 +3330,11 @@ es-module-lexer@^0.9.0:
   version "0.9.3"
   resolved "http://registry.npm.pt.mi.com/es-module-lexer/download/es-module-lexer-0.9.3.tgz#6f13db00cc38417137daf74366f535c8eb438f19"
   integrity sha1-bxPbAMw4QXE32vdDZvU1yOtDjxk=
+
+es6-object-assign@^1.1.0:
+  version "1.1.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/es6-object-assign/-/es6-object-assign-1.1.0.tgz#c2c3582656247c39ea107cb1e6652b6f9f24523c"
+  integrity sha1-wsNYJlYkfDnqEHyx5mUrb58kUjw=
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -3210,15 +3530,28 @@ event-pubsub@4.3.0:
   resolved "http://registry.npm.pt.mi.com/event-pubsub/download/event-pubsub-4.3.0.tgz#f68d816bc29f1ec02c539dc58c8dd40ce72cb36e"
   integrity sha1-9o2Ba8KfHsAsU53FjI3UDOcss24=
 
+event-target-shim@^5.0.0:
+  version "5.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
+  integrity sha1-XU0+vflYPWOlMzzi3rdICrKwV4k=
+
 eventemitter3@^4.0.0:
   version "4.0.7"
   resolved "http://registry.npm.pt.mi.com/eventemitter3/download/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha1-Lem2j2Uo1WRO9cWVJqG0oHMGFp8=
 
-events@^3.2.0:
+events@^3.2.0, events@^3.3.0:
   version "3.3.0"
   resolved "http://registry.npm.pt.mi.com/events/download/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
   integrity sha1-Mala0Kkk4tLEGagTrrLE6HjqdAA=
+
+evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
+  version "1.0.3"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/evp_bytestokey/-/evp_bytestokey-1.0.3.tgz#7fcbdb198dc71959432efe13842684e0525acb02"
+  integrity sha1-f8vbGY3HGVlDLv4ThCaE4FJaywI=
+  dependencies:
+    md5.js "^1.3.4"
+    safe-buffer "^5.1.1"
 
 execa@^0.8.0:
   version "0.8.0"
@@ -3359,6 +3692,11 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
+filter-obj@^2.0.2:
+  version "2.0.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/filter-obj/-/filter-obj-2.0.2.tgz#fff662368e505d69826abb113f0f6a98f56e9d5f"
+  integrity sha1-//ZiNo5QXWmCarsRPw9qmPVunV8=
+
 finalhandler@1.2.0:
   version "1.2.0"
   resolved "http://registry.npm.pt.mi.com/finalhandler/download/finalhandler-1.2.0.tgz#7d23fe5731b207b4640e4fcd00aec1f9207a7b32"
@@ -3406,6 +3744,13 @@ follow-redirects@^1.0.0:
   version "1.15.2"
   resolved "http://registry.npm.pt.mi.com/follow-redirects/download/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha1-tGCGQUS6Y/JoEJbydMTlcCbaLBM=
+
+for-each@^0.3.3:
+  version "0.3.3"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/for-each/-/for-each-0.3.3.tgz#69b447e88a0a5d32c3e7084f3f1710034b21376e"
+  integrity sha1-abRH6IoKXTLD5whPPxcQA0shN24=
+  dependencies:
+    is-callable "^1.1.3"
 
 forwarded@0.2.0:
   version "0.2.0"
@@ -3502,6 +3847,16 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.1:
   dependencies:
     function-bind "^1.1.1"
     has "^1.0.3"
+    has-symbols "^1.0.3"
+
+get-intrinsic@^1.1.3:
+  version "1.2.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/get-intrinsic/-/get-intrinsic-1.2.1.tgz#d295644fed4505fc9cde952c37ee12b477a83d82"
+  integrity sha1-0pVkT+1FBfyc3pUsN+4StHeoPYI=
+  dependencies:
+    function-bind "^1.1.1"
+    has "^1.0.3"
+    has-proto "^1.0.1"
     has-symbols "^1.0.3"
 
 get-stdin@^4.0.1:
@@ -3613,6 +3968,13 @@ globule@^1.0.0:
     lodash "^4.17.21"
     minimatch "~3.0.2"
 
+gopd@^1.0.1:
+  version "1.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/gopd/-/gopd-1.0.1.tgz#29ff76de69dac7489b7c0918a5788e56477c332c"
+  integrity sha1-Kf923mnax0ibfAkYpXiOVkd8Myw=
+  dependencies:
+    get-intrinsic "^1.1.3"
+
 graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
   version "4.2.10"
   resolved "http://registry.npm.pt.mi.com/graceful-fs/download/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
@@ -3652,10 +4014,22 @@ has-property-descriptors@^1.0.0:
   dependencies:
     get-intrinsic "^1.1.1"
 
-has-symbols@^1.0.3:
+has-proto@^1.0.1:
+  version "1.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/has-proto/-/has-proto-1.0.1.tgz#1885c1305538958aff469fef37937c22795408e0"
+  integrity sha1-GIXBMFU4lYr/Rp/vN5N8InlUCOA=
+
+has-symbols@^1.0.2, has-symbols@^1.0.3:
   version "1.0.3"
   resolved "http://registry.npm.pt.mi.com/has-symbols/download/has-symbols-1.0.3.tgz#bb7b2c4349251dce87b125f7bdf874aa7c8b39f8"
   integrity sha1-u3ssQ0klHc6HsSX3vfh0qnyLOfg=
+
+has-tostringtag@^1.0.0:
+  version "1.0.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/has-tostringtag/-/has-tostringtag-1.0.0.tgz#7e133818a7d394734f941e73c3d3f9291e658b25"
+  integrity sha1-fhM4GKfTlHNPlB5zw9P5KR5liyU=
+  dependencies:
+    has-symbols "^1.0.2"
 
 has-unicode@^2.0.1:
   version "2.0.1"
@@ -3669,6 +4043,15 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hash-base@^3.0.0:
+  version "3.1.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/hash-base/-/hash-base-3.1.0.tgz#55c381d9e06e1d2997a883b4a3fddfe7f0d3af33"
+  integrity sha1-VcOB2eBuHSmXqIO0o/3f5/DTrzM=
+  dependencies:
+    inherits "^2.0.4"
+    readable-stream "^3.6.0"
+    safe-buffer "^5.2.0"
+
 hash-sum@^1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.pt.mi.com/hash-sum/download/hash-sum-1.0.2.tgz#33b40777754c6432573c120cc3808bbd10d47f04"
@@ -3679,6 +4062,14 @@ hash-sum@^2.0.0:
   resolved "http://registry.npm.pt.mi.com/hash-sum/download/hash-sum-2.0.0.tgz#81d01bb5de8ea4a214ad5d6ead1b523460b0b45a"
   integrity sha1-gdAbtd6OpKIUrV1urRtSNGCwtFo=
 
+hash.js@^1.0.0, hash.js@^1.0.3:
+  version "1.1.7"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/hash.js/-/hash.js-1.1.7.tgz#0babca538e8d4ee4a0f8988d68866537a003cf42"
+  integrity sha1-C6vKU46NTuSg+JiNaIZlN6ADz0I=
+  dependencies:
+    inherits "^2.0.3"
+    minimalistic-assert "^1.0.1"
+
 he@^1.2.0:
   version "1.2.0"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
@@ -3688,6 +4079,15 @@ highlight.js@^10.7.1:
   version "10.7.3"
   resolved "http://registry.npm.pt.mi.com/highlight.js/download/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
   integrity sha1-aXJy45kTVuQMPKxWanTu9oF1ZTE=
+
+hmac-drbg@^1.0.1:
+  version "1.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
+  integrity sha1-0nRXAQJabHdabFRXk+1QL8DGSaE=
+  dependencies:
+    hash.js "^1.0.3"
+    minimalistic-assert "^1.0.0"
+    minimalistic-crypto-utils "^1.0.1"
 
 hosted-git-info@^2.1.4:
   version "2.8.9"
@@ -3834,6 +4234,11 @@ http-proxy@^1.18.1:
     follow-redirects "^1.0.0"
     requires-port "^1.0.0"
 
+https-browserify@^1.0.0:
+  version "1.0.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
+  integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
+
 https-proxy-agent@^5.0.0:
   version "5.0.1"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz#c59ef224a04fe8b754f3db0063a25ea30d0005d6"
@@ -3873,7 +4278,7 @@ icss-utils@^5.0.0, icss-utils@^5.1.0:
   resolved "http://registry.npm.pt.mi.com/icss-utils/download/icss-utils-5.1.0.tgz#c6be6858abd013d768e98366ae47e25d5887b1ae"
   integrity sha1-xr5oWKvQE9do6YNmrkfiXViHsa4=
 
-ieee754@^1.1.13:
+ieee754@^1.1.13, ieee754@^1.2.1:
   version "1.2.1"
   resolved "http://registry.npm.pt.mi.com/ieee754/download/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
   integrity sha1-jrehCmP/8l0VpXsAFYbRd9Gw01I=
@@ -3919,7 +4324,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.3:
+inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.3, inherits@~2.0.4:
   version "2.0.4"
   resolved "http://registry.npm.pt.mi.com/inherits/download/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
@@ -3944,6 +4349,14 @@ ipaddr.js@^2.0.1:
   resolved "http://registry.npm.pt.mi.com/ipaddr.js/download/ipaddr.js-2.0.1.tgz#eca256a7a877e917aeb368b0a7497ddf42ef81c0"
   integrity sha1-7KJWp6h36Reus2iwp0l930LvgcA=
 
+is-arguments@^1.0.4:
+  version "1.1.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/is-arguments/-/is-arguments-1.1.1.tgz#15b3f88fda01f2a97fec84ca761a560f123efa9b"
+  integrity sha1-FbP4j9oB8ql/7ITKdhpWDxI++ps=
+  dependencies:
+    call-bind "^1.0.2"
+    has-tostringtag "^1.0.0"
+
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "http://registry.npm.pt.mi.com/is-arrayish/download/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
@@ -3955,6 +4368,11 @@ is-binary-path@~2.1.0:
   integrity sha1-6h9/O4DwZCNug0cPhsCcJU+0Wwk=
   dependencies:
     binary-extensions "^2.0.0"
+
+is-callable@^1.1.3:
+  version "1.2.7"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/is-callable/-/is-callable-1.2.7.tgz#3bc2a85ea742d9e36205dcacdd72ca1fdc51b055"
+  integrity sha1-O8KoXqdC2eNiBdys3XLKH9xRsFU=
 
 is-ci@^1.0.10:
   version "1.2.1"
@@ -3997,6 +4415,13 @@ is-fullwidth-code-point@^3.0.0:
   resolved "http://registry.npm.pt.mi.com/is-fullwidth-code-point/download/is-fullwidth-code-point-3.0.0.tgz#f116f8064fe90b3f7844a38997c0b75051269f1d"
   integrity sha1-8Rb4Bk/pCz94RKOJl8C3UFEmnx0=
 
+is-generator-function@^1.0.7:
+  version "1.0.10"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/is-generator-function/-/is-generator-function-1.0.10.tgz#f1558baf1ac17e0deea7c0415c438351ff2b3c72"
+  integrity sha1-8VWLrxrBfg3up8BBXEODUf8rPHI=
+  dependencies:
+    has-tostringtag "^1.0.0"
+
 is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3, is-glob@~4.0.1:
   version "4.0.3"
   resolved "http://registry.npm.pt.mi.com/is-glob/download/is-glob-4.0.3.tgz#64f61e42cbbb2eec2071a9dac0b28ba1e65d5084"
@@ -4013,6 +4438,14 @@ is-lambda@^1.0.1:
   version "1.0.1"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/is-lambda/-/is-lambda-1.0.1.tgz#3d9877899e6a53efc0160504cde15f82e6f061d5"
   integrity sha1-PZh3iZ5qU+/AFgUEzeFfgubwYdU=
+
+is-nan@^1.2.1:
+  version "1.3.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/is-nan/-/is-nan-1.3.2.tgz#043a54adea31748b55b6cd4e09aadafa69bd9e1d"
+  integrity sha1-BDpUreoxdItVts1OCara+mm9nh0=
+  dependencies:
+    call-bind "^1.0.0"
+    define-properties "^1.1.3"
 
 is-number@^7.0.0:
   version "7.0.0"
@@ -4045,6 +4478,17 @@ is-stream@^2.0.0:
   version "2.0.1"
   resolved "http://registry.npm.pt.mi.com/is-stream/download/is-stream-2.0.1.tgz#fac1e3d53b97ad5a9d0ae9cef2389f5810a5c077"
   integrity sha1-+sHj1TuXrVqdCunO8jifWBClwHc=
+
+is-typed-array@^1.1.10, is-typed-array@^1.1.3:
+  version "1.1.10"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/is-typed-array/-/is-typed-array-1.1.10.tgz#36a5b5cb4189b575d1a3e4b08536bfb485801e3f"
+  integrity sha1-NqW1y0GJtXXRo+SwhTa/tIWAHj8=
+  dependencies:
+    available-typed-arrays "^1.0.5"
+    call-bind "^1.0.2"
+    for-each "^0.3.3"
+    gopd "^1.0.1"
+    has-tostringtag "^1.0.0"
 
 is-unicode-supported@^0.1.0:
   version "0.1.0"
@@ -4317,6 +4761,11 @@ log-update@^2.1.0:
     cli-cursor "^2.0.0"
     wrap-ansi "^3.0.1"
 
+long@4.0.0:
+  version "4.0.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/long/-/long-4.0.0.tgz#9a7b71cfb7d361a194ea555241c92f7468d5bf28"
+  integrity sha1-mntxz7fTYaGU6lVSQckvdGjVvyg=
+
 lower-case@^2.0.2:
   version "2.0.2"
   resolved "http://registry.npm.pt.mi.com/lower-case/download/lower-case-2.0.2.tgz#6fa237c63dbdc4a82ca0fd882e4722dc5e634e28"
@@ -4412,6 +4861,15 @@ map-obj@^4.0.0:
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/map-obj/-/map-obj-4.3.0.tgz#9304f906e93faae70880da102a9f1df0ea8bb05a"
   integrity sha1-kwT5Buk/qucIgNoQKp8d8OqLsFo=
 
+md5.js@^1.3.4:
+  version "1.3.5"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
+  integrity sha1-tdB7jjIW4+J81yjXL3DR5qNCAF8=
+  dependencies:
+    hash-base "^3.0.0"
+    inherits "^2.0.1"
+    safe-buffer "^5.1.2"
+
 mdn-data@2.0.14:
   version "2.0.14"
   resolved "http://registry.npm.pt.mi.com/mdn-data/download/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
@@ -4482,6 +4940,14 @@ micromatch@^4.0.2, micromatch@^4.0.4:
     braces "^3.0.2"
     picomatch "^2.3.1"
 
+miller-rabin@^4.0.0:
+  version "4.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/miller-rabin/-/miller-rabin-4.0.1.tgz#f080351c865b0dc562a8462966daa53543c78a4d"
+  integrity sha1-8IA1HIZbDcViqEYpZtqlNUPHik0=
+  dependencies:
+    bn.js "^4.0.0"
+    brorand "^1.0.1"
+
 mime-db@1.52.0, "mime-db@>= 1.43.0 < 2":
   version "1.52.0"
   resolved "http://registry.npm.pt.mi.com/mime-db/download/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
@@ -4521,10 +4987,15 @@ mini-css-extract-plugin@^2.5.3:
   dependencies:
     schema-utils "^4.0.0"
 
-minimalistic-assert@^1.0.0:
+minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.pt.mi.com/minimalistic-assert/download/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
   integrity sha1-LhlN4ERibUoQ5/f7wAznPoPk1cc=
+
+minimalistic-crypto-utils@^1.0.1:
+  version "1.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
+  integrity sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo=
 
 minimatch@^3.0.4, minimatch@^3.1.1:
   version "3.1.2"
@@ -4730,6 +5201,13 @@ node-fetch@^2.6.7:
   dependencies:
     whatwg-url "^5.0.0"
 
+node-fetch@~2.6.1:
+  version "2.6.11"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/node-fetch/-/node-fetch-2.6.11.tgz#cde7fc71deef3131ef80a738919f999e6edfff25"
+  integrity sha1-zef8cd7vMTHvgKc4kZ+Znm7f/yU=
+  dependencies:
+    whatwg-url "^5.0.0"
+
 node-forge@^1:
   version "1.3.1"
   resolved "http://registry.npm.pt.mi.com/node-forge/download/node-forge-1.3.1.tgz#be8da2af243b2417d5f646a770663a92b7e9ded3"
@@ -4750,6 +5228,37 @@ node-gyp@^8.4.1:
     semver "^7.3.5"
     tar "^6.1.2"
     which "^2.0.2"
+
+node-polyfill-webpack-plugin@^2.0.1:
+  version "2.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/node-polyfill-webpack-plugin/-/node-polyfill-webpack-plugin-2.0.1.tgz#141d86f177103a8517c71d99b7c6a46edbb1bb58"
+  integrity sha1-FB2G8XcQOoUXxx2Zt8akbtuxu1g=
+  dependencies:
+    assert "^2.0.0"
+    browserify-zlib "^0.2.0"
+    buffer "^6.0.3"
+    console-browserify "^1.2.0"
+    constants-browserify "^1.0.0"
+    crypto-browserify "^3.12.0"
+    domain-browser "^4.22.0"
+    events "^3.3.0"
+    filter-obj "^2.0.2"
+    https-browserify "^1.0.0"
+    os-browserify "^0.3.0"
+    path-browserify "^1.0.1"
+    process "^0.11.10"
+    punycode "^2.1.1"
+    querystring-es3 "^0.2.1"
+    readable-stream "^4.0.0"
+    stream-browserify "^3.0.0"
+    stream-http "^3.2.0"
+    string_decoder "^1.3.0"
+    timers-browserify "^2.0.12"
+    tty-browserify "^0.0.1"
+    type-fest "^2.14.0"
+    url "^0.11.0"
+    util "^0.12.4"
+    vm-browserify "^1.1.2"
 
 node-releases@^2.0.8:
   version "2.0.10"
@@ -4864,6 +5373,14 @@ object-inspect@^1.9.0:
   resolved "http://registry.npm.pt.mi.com/object-inspect/download/object-inspect-1.12.2.tgz#c0641f26394532f28ab8d796ab954e43c009a8ea"
   integrity sha1-wGQfJjlFMvKKuNeWq5VOQ8AJqOo=
 
+object-is@^1.0.1:
+  version "1.1.5"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/object-is/-/object-is-1.1.5.tgz#b9deeaa5fc7f1846a0faecdceec138e5778f53ac"
+  integrity sha1-ud7qpfx/GEag+uzc7sE45XePU6w=
+  dependencies:
+    call-bind "^1.0.2"
+    define-properties "^1.1.3"
+
 object-keys@^1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.pt.mi.com/object-keys/download/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
@@ -4958,6 +5475,11 @@ ora@^5.3.0:
     strip-ansi "^6.0.0"
     wcwidth "^1.0.1"
 
+os-browserify@^0.3.0:
+  version "0.3.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/os-browserify/-/os-browserify-0.3.0.tgz#854373c7f5c2315914fc9bfc6bd8238fdda1ec27"
+  integrity sha1-hUNzx/XCMVkU/Jv8a9gjj92h7Cc=
+
 p-finally@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.pt.mi.com/p-finally/download/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
@@ -4997,6 +5519,11 @@ p-try@^2.0.0:
   resolved "http://registry.npm.pt.mi.com/p-try/download/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha1-yyhoVA4xPWHeWPr741zpAE1VQOY=
 
+pako@~1.0.5:
+  version "1.0.11"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
+  integrity sha1-bJWZ00DVTf05RjgCUqNXBaa5kr8=
+
 param-case@^3.0.4:
   version "3.0.4"
   resolved "http://registry.npm.pt.mi.com/param-case/download/param-case-3.0.4.tgz#7d17fe4aa12bde34d4a77d91acfb6219caad01c5"
@@ -5011,6 +5538,17 @@ parent-module@^1.0.0:
   integrity sha1-aR0nCeeMefrjoVZiJFLQB2LKqqI=
   dependencies:
     callsites "^3.0.0"
+
+parse-asn1@^5.0.0, parse-asn1@^5.1.5:
+  version "5.1.6"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/parse-asn1/-/parse-asn1-5.1.6.tgz#385080a3ec13cb62a62d39409cb3e88844cdaed4"
+  integrity sha1-OFCAo+wTy2KmLTlAnLPoiETNrtQ=
+  dependencies:
+    asn1.js "^5.2.0"
+    browserify-aes "^1.0.0"
+    evp_bytestokey "^1.0.0"
+    pbkdf2 "^3.0.3"
+    safe-buffer "^5.1.1"
 
 parse-json@^5.0.0:
   version "5.2.0"
@@ -5052,6 +5590,11 @@ pascal-case@^3.1.2:
     no-case "^3.0.4"
     tslib "^2.0.3"
 
+path-browserify@^1.0.1:
+  version "1.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/path-browserify/-/path-browserify-1.0.1.tgz#d98454a9c3753d5790860f16f68867b9e46be1fd"
+  integrity sha1-2YRUqcN1PVeQhg8W9ohnueRr4f0=
+
 path-exists@^4.0.0:
   version "4.0.0"
   resolved "http://registry.npm.pt.mi.com/path-exists/download/path-exists-4.0.0.tgz#513bdbe2d3b95d7762e8c1137efa195c6c61b5b3"
@@ -5086,6 +5629,17 @@ path-type@^4.0.0:
   version "4.0.0"
   resolved "http://registry.npm.pt.mi.com/path-type/download/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha1-hO0BwKe6OAr+CdkKjBgNzZ0DBDs=
+
+pbkdf2@^3.0.3:
+  version "3.1.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/pbkdf2/-/pbkdf2-3.1.2.tgz#dd822aa0887580e52f1a039dc3eda108efae3075"
+  integrity sha1-3YIqoIh1gOUvGgOdw+2hCO+uMHU=
+  dependencies:
+    create-hash "^1.1.2"
+    create-hmac "^1.1.4"
+    ripemd160 "^2.0.1"
+    safe-buffer "^5.0.1"
+    sha.js "^2.4.8"
 
 picocolors@^0.2.1:
   version "0.2.1"
@@ -5404,6 +5958,11 @@ process-nextick-args@~2.0.0:
   resolved "http://registry.npm.pt.mi.com/process-nextick-args/download/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha1-eCDZsWEgzFXKmud5JoCufbptf+I=
 
+process@^0.11.10:
+  version "0.11.10"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
+  integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
+
 progress-webpack-plugin@^1.0.12:
   version "1.0.12"
   resolved "http://registry.npm.pt.mi.com/progress-webpack-plugin/download/progress-webpack-plugin-1.0.12.tgz#034f28be5243062904a02ddfa53c440970fbbc81"
@@ -5444,6 +6003,18 @@ pseudomap@^1.0.2:
   resolved "http://registry.npm.pt.mi.com/pseudomap/download/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
   integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
 
+public-encrypt@^4.0.0:
+  version "4.0.3"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/public-encrypt/-/public-encrypt-4.0.3.tgz#4fcc9d77a07e48ba7527e7cbe0de33d0701331e0"
+  integrity sha1-T8ydd6B+SLp1J+fL4N4z0HATMeA=
+  dependencies:
+    bn.js "^4.1.0"
+    browserify-rsa "^4.0.0"
+    create-hash "^1.1.0"
+    parse-asn1 "^5.0.0"
+    randombytes "^2.0.1"
+    safe-buffer "^5.1.2"
+
 pump@^3.0.0:
   version "3.0.0"
   resolved "http://registry.npm.pt.mi.com/pump/download/pump-3.0.0.tgz#b4a2116815bde2f4e1ea602354e8c75565107a64"
@@ -5452,7 +6023,12 @@ pump@^3.0.0:
     end-of-stream "^1.1.0"
     once "^1.3.1"
 
-punycode@^2.1.0:
+punycode@1.3.2:
+  version "1.3.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/punycode/-/punycode-1.3.2.tgz#9653a036fb7c1ee42342f2325cceefea3926c48d"
+  integrity sha1-llOgNvt8HuQjQvIyXM7v6jkmxI0=
+
+punycode@^2.1.0, punycode@^2.1.1:
   version "2.3.0"
   resolved "http://registry.npm.pt.mi.com/punycode/download/punycode-2.3.0.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"
   integrity sha1-9n+mfJTaj00M//mBruQRgGQZm48=
@@ -5464,6 +6040,16 @@ qs@6.10.3:
   dependencies:
     side-channel "^1.0.4"
 
+querystring-es3@^0.2.1:
+  version "0.2.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/querystring-es3/-/querystring-es3-0.2.1.tgz#9ec61f79049875707d69414596fd907a4d711e73"
+  integrity sha1-nsYfeQSYdXB9aUFFlv2Qek1xHnM=
+
+querystring@0.2.0:
+  version "0.2.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
+  integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
+
 queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "http://registry.npm.pt.mi.com/queue-microtask/download/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
@@ -5474,11 +6060,19 @@ quick-lru@^4.0.1:
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/quick-lru/-/quick-lru-4.0.1.tgz#5b8878f113a58217848c6482026c73e1ba57727f"
   integrity sha1-W4h48ROlgheEjGSCAmxz4bpXcn8=
 
-randombytes@^2.1.0:
+randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5, randombytes@^2.1.0:
   version "2.1.0"
   resolved "http://registry.npm.pt.mi.com/randombytes/download/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
   integrity sha1-32+ENy8CcNxlzfYpE0mrekc9Tyo=
   dependencies:
+    safe-buffer "^5.1.0"
+
+randomfill@^1.0.3:
+  version "1.0.4"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/randomfill/-/randomfill-1.0.4.tgz#c92196fc86ab42be983f1bf31778224931d61458"
+  integrity sha1-ySGW/IarQr6YPxvzF3giSTHWFFg=
+  dependencies:
+    randombytes "^2.0.5"
     safe-buffer "^5.1.0"
 
 range-parser@^1.2.1, range-parser@~1.2.1:
@@ -5537,6 +6131,15 @@ readable-stream@^3.0.6, readable-stream@^3.4.0:
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
 
+readable-stream@^3.5.0:
+  version "3.6.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/readable-stream/-/readable-stream-3.6.2.tgz#56a9b36ea965c00c5a93ef31eb111a0f11056967"
+  integrity sha1-VqmzbqllwAxak+8x6xEaDxEFaWc=
+  dependencies:
+    inherits "^2.0.3"
+    string_decoder "^1.1.1"
+    util-deprecate "^1.0.1"
+
 readable-stream@^3.6.0:
   version "3.6.1"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/readable-stream/-/readable-stream-3.6.1.tgz#f9f9b5f536920253b3d26e7660e7da4ccff9bb62"
@@ -5545,6 +6148,16 @@ readable-stream@^3.6.0:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
+
+readable-stream@^4.0.0:
+  version "4.4.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/readable-stream/-/readable-stream-4.4.0.tgz#55ce132d60a988c460d75c631e9ccf6a7229b468"
+  integrity sha1-Vc4TLWCpiMRg11xjHpzPanIptGg=
+  dependencies:
+    abort-controller "^3.0.0"
+    buffer "^6.0.3"
+    events "^3.3.0"
+    process "^0.11.10"
 
 readdirp@~3.6.0:
   version "3.6.0"
@@ -5697,6 +6310,14 @@ rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
+ripemd160@^2.0.0, ripemd160@^2.0.1:
+  version "2.0.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/ripemd160/-/ripemd160-2.0.2.tgz#a1c1a6f624751577ba5d07914cbc92850585890c"
+  integrity sha1-ocGm9iR1FXe6XQeRTLyShQWFiQw=
+  dependencies:
+    hash-base "^3.0.0"
+    inherits "^2.0.1"
+
 run-parallel@^1.1.9:
   version "1.2.0"
   resolved "http://registry.npm.pt.mi.com/run-parallel/download/run-parallel-1.2.0.tgz#66d1368da7bdf921eb9d95bd1a9229e7f21a43ee"
@@ -5709,12 +6330,12 @@ safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "http://registry.npm.pt.mi.com/safe-buffer/download/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha1-mR7GnSluAxN0fVm9/St0XDX4go0=
 
-safe-buffer@5.2.1, safe-buffer@>=5.1.0, safe-buffer@^5.1.0, safe-buffer@~5.2.0:
+safe-buffer@5.2.1, safe-buffer@>=5.1.0, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@^5.2.0, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "http://registry.npm.pt.mi.com/safe-buffer/download/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
 
-"safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0":
+"safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0", safer-buffer@^2.1.0:
   version "2.1.2"
   resolved "http://registry.npm.pt.mi.com/safer-buffer/download/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
@@ -5772,6 +6393,11 @@ scss-tokenizer@^0.4.3:
   dependencies:
     js-base64 "^2.4.9"
     source-map "^0.7.3"
+
+seedrandom@^3.0.5:
+  version "3.0.5"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/seedrandom/-/seedrandom-3.0.5.tgz#54edc85c95222525b0c7a6f6b3543d8e0b3aa0a7"
+  integrity sha1-VO3IXJUiJSWwx6b2s1Q9jgs6oKc=
 
 select-hose@^2.0.0:
   version "2.0.0"
@@ -5856,6 +6482,11 @@ set-blocking@^2.0.0:
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
   integrity sha1-BF+XgtARrppoA93TgrJDkrPYkPc=
 
+setimmediate@^1.0.4:
+  version "1.0.5"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
+  integrity sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
+
 setprototypeof@1.1.0:
   version "1.1.0"
   resolved "http://registry.npm.pt.mi.com/setprototypeof/download/setprototypeof-1.1.0.tgz#d0bd85536887b6fe7c0d818cb962d9d91c54e656"
@@ -5865,6 +6496,14 @@ setprototypeof@1.2.0:
   version "1.2.0"
   resolved "http://registry.npm.pt.mi.com/setprototypeof/download/setprototypeof-1.2.0.tgz#66c9a24a73f9fc28cbe66b09fed3d33dcaf1b424"
   integrity sha1-ZsmiSnP5/CjL5msJ/tPTPcrxtCQ=
+
+sha.js@^2.4.0, sha.js@^2.4.8:
+  version "2.4.11"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/sha.js/-/sha.js-2.4.11.tgz#37a5cf0b81ecbc6943de109ba2960d1b26584ae7"
+  integrity sha1-N6XPC4HsvGlD3hCbopYNGyZYSuc=
+  dependencies:
+    inherits "^2.0.1"
+    safe-buffer "^5.0.1"
 
 shallow-clone@^3.0.0:
   version "3.0.1"
@@ -6097,6 +6736,24 @@ stdout-stream@^1.4.0:
   dependencies:
     readable-stream "^2.0.1"
 
+stream-browserify@^3.0.0:
+  version "3.0.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/stream-browserify/-/stream-browserify-3.0.0.tgz#22b0a2850cdf6503e73085da1fc7b7d0c2122f2f"
+  integrity sha1-IrCihQzfZQPnMIXaH8e30MISLy8=
+  dependencies:
+    inherits "~2.0.4"
+    readable-stream "^3.5.0"
+
+stream-http@^3.2.0:
+  version "3.2.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/stream-http/-/stream-http-3.2.0.tgz#1872dfcf24cb15752677e40e5c3f9cc1926028b5"
+  integrity sha1-GHLfzyTLFXUmd+QOXD+cwZJgKLU=
+  dependencies:
+    builtin-status-codes "^3.0.0"
+    inherits "^2.0.4"
+    readable-stream "^3.6.0"
+    xtend "^4.0.2"
+
 "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
   resolved "http://registry.npm.pt.mi.com/string-width/download/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
@@ -6114,7 +6771,7 @@ string-width@^2.1.1:
     is-fullwidth-code-point "^2.0.0"
     strip-ansi "^4.0.0"
 
-string_decoder@^1.1.1:
+string_decoder@^1.1.1, string_decoder@^1.3.0:
   version "1.3.0"
   resolved "http://registry.npm.pt.mi.com/string_decoder/download/string_decoder-1.3.0.tgz#42f114594a46cf1a8e30b0a84f56c78c3edac21e"
   integrity sha1-QvEUWUpGzxqOMLCoT1bHjD7awh4=
@@ -6305,6 +6962,13 @@ thunky@^1.0.2:
   resolved "http://registry.npm.pt.mi.com/thunky/download/thunky-1.1.0.tgz#5abaf714a9405db0504732bbccd2cedd9ef9537d"
   integrity sha1-Wrr3FKlAXbBQRzK7zNLO3Z75U30=
 
+timers-browserify@^2.0.12:
+  version "2.0.12"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/timers-browserify/-/timers-browserify-2.0.12.tgz#44a45c11fbf407f34f97bccd1577c652361b00ee"
+  integrity sha1-RKRcEfv0B/NPl7zNFXfGUjYbAO4=
+  dependencies:
+    setimmediate "^1.0.4"
+
 timsort@^0.3.0:
   version "0.3.0"
   resolved "http://registry.npm.pt.mi.com/timsort/download/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
@@ -6352,6 +7016,11 @@ tslib@^2.0.3:
   resolved "http://registry.npm.pt.mi.com/tslib/download/tslib-2.5.0.tgz#42bfed86f5787aeb41d031866c8f402429e0fddf"
   integrity sha1-Qr/thvV4eutB0DGGbI9AJCng/d8=
 
+tty-browserify@^0.0.1:
+  version "0.0.1"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/tty-browserify/-/tty-browserify-0.0.1.tgz#3f05251ee17904dfd0677546670db9651682b811"
+  integrity sha1-PwUlHuF5BN/QZ3VGZw25ZRaCuBE=
+
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
   resolved "http://registry.npm.pt.mi.com/type-check/download/type-check-0.4.0.tgz#07b8203bfa7056c0657050e3ccd2c37730bab8f1"
@@ -6378,6 +7047,11 @@ type-fest@^0.8.1:
   version "0.8.1"
   resolved "http://registry.npm.pt.mi.com/type-fest/download/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha1-CeJJ696FHTseSNJ8EFREZn8XuD0=
+
+type-fest@^2.14.0:
+  version "2.19.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/type-fest/-/type-fest-2.19.0.tgz#88068015bb33036a598b952e55e9311a60fd3a9b"
+  integrity sha1-iAaAFbszA2pZi5UuVekxGmD9Ops=
 
 type-is@~1.6.18:
   version "1.6.18"
@@ -6463,10 +7137,29 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+url@^0.11.0:
+  version "0.11.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/url/-/url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1"
+  integrity sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=
+  dependencies:
+    punycode "1.3.2"
+    querystring "0.2.0"
+
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "http://registry.npm.pt.mi.com/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+util@^0.12.0, util@^0.12.4:
+  version "0.12.5"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/util/-/util-0.12.5.tgz#5f17a6059b73db61a875668781a1c2b136bd6fbc"
+  integrity sha1-XxemBZtz22GodWaHgaHCsTa9b7w=
+  dependencies:
+    inherits "^2.0.3"
+    is-arguments "^1.0.4"
+    is-generator-function "^1.0.7"
+    is-typed-array "^1.1.3"
+    which-typed-array "^1.1.2"
 
 utila@~0.4:
   version "0.4.0"
@@ -6500,6 +7193,11 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "http://registry.npm.pt.mi.com/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+vm-browserify@^1.1.2:
+  version "1.1.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
+  integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
 vue-eslint-parser@^8.0.1:
   version "8.3.0"
@@ -6733,6 +7431,18 @@ whatwg-url@^5.0.0:
     tr46 "~0.0.3"
     webidl-conversions "^3.0.0"
 
+which-typed-array@^1.1.2:
+  version "1.1.9"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/which-typed-array/-/which-typed-array-1.1.9.tgz#307cf898025848cf995e795e8423c7f337efbde6"
+  integrity sha1-MHz4mAJYSM+ZXnlehCPH8zfvveY=
+  dependencies:
+    available-typed-arrays "^1.0.5"
+    call-bind "^1.0.2"
+    for-each "^0.3.3"
+    gopd "^1.0.1"
+    has-tostringtag "^1.0.0"
+    is-typed-array "^1.1.10"
+
 which@^1.2.9:
   version "1.3.1"
   resolved "http://registry.npm.pt.mi.com/which/download/which-1.3.1.tgz#a45043d54f5805316da8d62f9f50918d3da70b0a"
@@ -6795,6 +7505,11 @@ ws@^8.4.2:
   version "8.12.0"
   resolved "http://registry.npm.pt.mi.com/ws/download/ws-8.12.0.tgz#485074cc392689da78e1828a9ff23585e06cddd8"
   integrity sha1-SFB0zDkmidp44YKKn/I1heBs3dg=
+
+xtend@^4.0.2:
+  version "4.0.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
+  integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
 
 y18n@^5.0.5:
   version "5.0.8"

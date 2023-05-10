@@ -1,13 +1,13 @@
 import Barrage from "./Barrage.js";
-
+import Track from "./Track.js";
+import {
+  DEFAULT_TRACK_SIZE,
+  BarrageDelayedMaxTime,
+  BarrageMaxSpeed,
+} from "./data.js";
 export default class CanvasBarrage {
   constructor(canvas, video, opts = {}) {
-    // opts = {}表示如果opts没传就设为{}，防止报错，ES6语法
-
-    // 如果canvas和video都没传，那就直接return掉
     if (!canvas || !video) return;
-
-    // 直接挂载到this上
     this.video = video;
     this.canvas = canvas;
     // 设置canvas的宽高和video一致
@@ -16,6 +16,10 @@ export default class CanvasBarrage {
     this.canvas.height = videoRect.height;
     // 获取画布，操作画布
     this.ctx = canvas.getContext("2d");
+    // 轨道初始化
+    this.track = new Track(this.canvas);
+    // 弹幕自增 id
+    this.autoId = 0;
 
     // 设置默认参数，如果没有传就给带上
     let defOpts = {
@@ -32,60 +36,68 @@ export default class CanvasBarrage {
     this.isPaused = true;
     // 得到所有的弹幕消息
     this.barrages = this.data.map((item) => new Barrage(item, this));
-    // 渲染
+    // 渲染canvas绘制的弹幕
     this.render();
-    console.log(this);
+    console.log(" ******************** 创建 CanvasBarrage 实例：", this);
   }
-  // 渲染canvas绘制的弹幕
-  render() {
-    // 渲染的第一步是清除原来的画布，方便复用写成clear方法来调用
+  async render() {
+    // 清除原来的画布
     this.clear();
     // 渲染弹幕
-    this.renderBarrage(); //
-    // 如果没有暂停的话就继续渲染
-    if (this.isPaused === false) {
-      // 通过raf渲染动画，递归进行渲染
-      console.log("current isPaused", this.isPaused);
-      requestAnimationFrame(this.render.bind(this));
-    }
+    this.renderBarrage();
+    // 不暂停就一直通过 RAF 渲染动画
+    !this.isPaused && requestAnimationFrame(this.render.bind(this));
   }
   clear() {
     // 清除整个画布
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
-
   renderBarrage() {
-    // 首先拿到当前视频播放的时间
-    // 要根据该时间来和弹幕要展示的时间做比较，来判断是否展示弹幕
+    // 首先拿到当前视频播放的时间，要比较弹幕应该展示的时间
     let time = this.video.currentTime;
-
     // 遍历所有的弹幕，每个barrage都是Barrage的实例
-    this.barrages.forEach((barrage) => {
-      // 用一个flag来处理是否渲染，默认是false
-      // 并且只有在视频播放时间大于等于当前弹幕的展现时间时才做处理
+    for (let i = 0; i < this.barrages.length; i++) {
+      const barrage = this.barrages[i];
+      // 用一个 flag 来标记是否渲染，默认是false
       if (!barrage.flag && time >= barrage.time) {
-        // 判断当前弹幕是否有过初始化了
-        // 如果isInit还是false，那就需要先对当前弹幕进行初始化操作
-        if (!barrage.isInit) {
+        // 时效性处理，滞后视频 10s 的弹幕略过
+        if (!barrage.isInit && time <= barrage.time + BarrageDelayedMaxTime) {
           barrage.init();
+          // 寻找合适轨道
+          let trackIndex = (barrage.trackIndex =
+            this.track._addToTrack(barrage));
+          if (barrage.trackIndex.length > 0) {
+            barrage.y =
+              (trackIndex[trackIndex.length - 1] + 1) * DEFAULT_TRACK_SIZE;
+          }
           barrage.isInit = true;
         }
-        // 弹幕要从右向左渲染，所以x坐标减去当前弹幕的speed即可
-        barrage.x -= barrage.speed;
-        barrage.render(); // 渲染当前弹幕
-
-        // 如果当前弹幕的x坐标比自身的宽度还小了，就表示结束渲染了
-        if (barrage.x < -barrage.width) {
-          barrage.flag = true; // 把flag设为true下次就不再渲染
+        // 设置了 y 值的弹幕可以入轨进入画布了
+        if (barrage.y) {
+          // 弹幕要从右向左渲染，所以x坐标减去当前弹幕的speed即可
+          if (time > barrage.time + BarrageDelayedMaxTime) {
+            // 时效性处理，在画面上停留 10s 以上的弹幕加至最大速
+            barrage.x -= BarrageMaxSpeed;
+          } else {
+            barrage.x -= barrage.speed;
+          }
+          barrage.render(); // 渲染当前弹幕
+          // 如果当前弹幕的x坐标比自身的宽度还小了，就表示结束渲染了
+          if (barrage.x < -barrage.width) {
+            barrage.flag = true; // 把flag设为true下次就不再渲染
+            this.track._removeFromTrack(barrage.trackIndex, barrage.autoId);
+          }
         }
       }
-    });
+    }
   }
   add(obj) {
     this.barrages.push(new Barrage(obj, this));
   }
+
   replay() {
     this.clear();
+    this.track._resetTracks();
     let time = this.video.currentTime;
     this.barrages.forEach((barrage) => {
       barrage.flag = false;
